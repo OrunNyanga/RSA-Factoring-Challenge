@@ -23,10 +23,10 @@ if len(argv) != 2:
 
 try:
     with open(argv[1]) as file:
-	line = file.readline()
+        line = file.readline()
 
-	while line != "":
-	    value = int(line.split('\n')[0])
+        while line != "":
+            value = int(line.split('\n')[0])
             factorize(value)
             line = file.readline()
 except:
